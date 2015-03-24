@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "thibaut.re's website",
   "scripts": {
-    "build": "node build.js"
+    "build": "sh build.sh"
   },
   "dependencies": {
-    "jade": "^1.9.2"
+    "jade": "1.9.*",
+    "stylus": "0.50.*"
   }
 }
