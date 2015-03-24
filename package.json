@@ -1,0 +1,11 @@
+{
+  "name": "thibaut.re",
+  "version": "1.0.0",
+  "description": "thibaut.re's website",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "jade": "^1.9.2"
+  }
+}
