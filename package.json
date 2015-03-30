@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "thibaut.re's website",
   "scripts": {
-    "build": "sh build.sh"
+    "build": "jade views/index.jade --out public && stylus views/styles/index.styl --out public/"
   },
   "dependencies": {
     "jade": "1.9.*",
