@@ -33,7 +33,6 @@ block header
             h3.stat-name 3D polygons generated
             strong.stat-value#js-codelines 25.234
 
-
     nav.header--main-nav
       a(href="/").header--main-link
         img.header--main-me(src="assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
@@ -137,6 +136,8 @@ block body
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")
+  script(src="scripts/age.js", type="text/javascript")
+  script(src="scripts/stat.js", type="text/javascript")
   script(type="text/javascript").
     var fastIntro = true;
 
@@ -191,3 +192,11 @@ block scripts
         carrousel.run();
       }, 3200);
     }
+
+    // Age
+    var myAge = new Age(new Date("1991-09-21"));
+    var myAgeStat = new Stat(document.getElementById("js-age"), 100);
+    myAgeStat.calculateFunction = function() {
+      return myAge.calculate();
+    };
+    myAgeStat.run();
