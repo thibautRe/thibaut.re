@@ -69,7 +69,13 @@ projectcard-padding = 15px
   color c-grey3
   
   &:before
-    content "•"
+    content " "
+    position relative
+    top -3px
+    height 3px
+    width @height
+    border-radius 100px
+    background-color c-grey3
     display inline-block
     margin 0 10px
 
@@ -99,7 +105,7 @@ projectcard-padding = 15px
   background-color rgba(0,0,0,.8)
   opacity 1
   transition opacity .5s .2s, transform .4s
-  transform translate(90%, 20%) rotate(-45deg)
+  transform translate(120%, 20%) rotate(-45deg)
   z-index 20
   
   .projectcard:hover &
@@ -112,7 +118,7 @@ projectcard-padding = 15px
   display block
   height projectcard-size
   width projectcard-size
-  transform translate(90%, 20%) rotate(-45deg)
+  transform translate(120%, 20%) rotate(-45deg)
   transition transform .4s
   z-index 15
   
