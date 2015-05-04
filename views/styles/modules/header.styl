@@ -1,5 +1,5 @@
 header-height = 50px;
-header-stats-height = 150px
+header-stats-height = 250px
 
 .header--main
   width 100%
@@ -16,15 +16,25 @@ header-stats-height = 150px
   padding 15px
   background-color c-black2
   z-index -1
-    
+  
+.header--main-stats-img
+  display block
+  height 110px
+  width @height
+  margin 0 auto -12px
+  border 2px solid c-white
+  border-radius 1000px
+  box-shadow 0 0 20px alpha(c-white, 0.7)
+
+
 .header--main-stats-title
   letter-spacing 2px
-  
+
   & small
-    display inline-block
-    margin 0 10px
+    display block
+    margin-top -7px
     font-size 15px
-    letter-spacing 0px
+    letter-spacing 0.5px
     color c-grey3
 
 .header--main-nav
