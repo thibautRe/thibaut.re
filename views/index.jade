@@ -13,20 +13,34 @@ block body
         span#js-carrousel-intro.intro-carrousel Thibaut
 
     .projects#js-projects
-      h2 My projects
+      h2.projects-title My projects
+        small.projects-title-desc Some projects I've been working on
 
       a.projectcard(href="#")
-        h3.projectcard-title SCPWNR*
-        p.projectcard-desc SCPWNR
+        .projectcard-imgcontainer
+          img(src="assets/img/thumbs/scpwnr.jpg").projectcard-img
+          .projectcard-imgoverlay
+
+        .projectcard-content
+          h3.projectcard-title SCPWNR*
+          p.projectcard-desc SCPWNR
+
 
       a.projectcard(href="#")
-        h3.projectcard-title INTech Robot
-        p.projectcard-desc.
-          A robot for the French Robotic Tournament
+        .projectcard-imgcontainer
+          img(src="assets/img/thumbs/robot.jpg").projectcard-img
+          .projectcard-imgoverlay
+
+        .projectcard-content
+          h3.projectcard-title INTech Robot
+          p.projectcard-desc.
+            A robot for the French Robotic Tournament
+
 
       a.projectcard(href="#")
-        h3.projectcard-title Lorem ipsum
-        p.projectcard-desc Dolore sit amet
+        .projectcard-content
+          h3.projectcard-title Lorem ipsum
+          p.projectcard-desc Dolore sit amet
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")

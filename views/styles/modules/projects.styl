@@ -7,18 +7,48 @@
 
   &.is-visible
     animation fade-in .5s forwards
+    
+.projects-title
+  margin 80px 0 40px
+  display block
+  text-align center
+  
+.projects-title-desc
+  display block
+  color c-grey2
+  font-weight normal
+  margin 2px 0 0
+  
+projectcard-size = 312px
 
 .projectcard
+  position relative
   background-color c-black2
   border 1px solid c-grey
   border-radius 4px
   display block
   float left
-  width 40%
+  width projectcard-size
+  height projectcard-size
   margin 15px
-  padding 15px
   color inherit
   text-decoration none
+  transform translate(0,0)
+  overflow hidden
+  box-shadow 0 0 5px c-shadow
+  transition all .3s
+  
+  &:hover, &:focus
+    border-color c-accent
+    
+  &:hover
+    transform translate(0px, -5px)
+    box-shadow 0 10px 20px black
+    
+.projectcard-content
+  position absolute
+  padding 15px
+  z-index 30
   
 .projectcard-title
   margin 0
@@ -26,4 +56,48 @@
   
   .projectcard:hover &
     color c-accent
+
+.projectcard-imgcontainer
+  position absolute
+  display block
+  top 0
+  left 0
+  overflow hidden
+  height 1.414*projectcard-size
+  width 1.414*projectcard-size
+  border-left 5px solid black
+  transform translate(-70%, -70%) rotate(45deg)
+  transition transform .4s
   
+  .projectcard:hover &
+    transition transform .5s .2s
+    transform translate(-14%,-14%) rotate(45deg)
+    
+.projectcard-imgoverlay
+  position absolute
+  display block
+  height projectcard-size
+  width projectcard-size
+  background-color rgba(0,0,0,.8)
+  opacity 1
+  transition opacity .5s .2s, transform .4s
+  transform translate(50%, 20%) rotate(-45deg)
+  z-index 20
+  
+  .projectcard:hover &
+    opacity 0.7
+    transition transform .5s .2s
+    transform translate(20%, 20%) rotate(-45deg) scale(3.1)
+    
+.projectcard-img
+  position absolute
+  display block
+  height projectcard-size
+  width projectcard-size
+  transform translate(50%, 20%) rotate(-45deg)
+  transition transform .4s
+  z-index 15
+  
+  .projectcard:hover &
+    transition transform .5s .2s
+    transform translate(20%, 20%) rotate(-45deg) scale(1.3)
