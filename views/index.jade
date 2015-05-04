@@ -59,9 +59,22 @@ block body
 
 
       a.projectcard(href="#")
+        .projectcard-imgcontainer
+          img(src="assets/img/thumbs/domora_web.jpg").projectcard-img
+          .projectcard-imgoverlay
+
         .projectcard-content
-          h3.projectcard-title Lorem ipsum
-          p.projectcard-desc Dolore sit amet
+          header.projectcard-header
+            h3.projectcard-title Domora.com
+              small.projectcard-subtitle Website
+          p.projectcard-desc.
+            The website for my Start-up, Domora.
+            We wanted a modern website without the boostrap-like
+            aspect.
+
+          h3 Technologies
+          p.
+            HTML5, LESS, Javascript, Symfony2
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")
