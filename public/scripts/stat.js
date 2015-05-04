@@ -9,7 +9,7 @@ var Stat = function(elmt, time) {
 };
 
 Stat.prototype.run = function() {
-    this.elmt.innerHTML = this.calculateFunction();
+    this.elmt.innerHTML = this.calculateFunction(this.elmt.innerHTML);
     var stat = this;
     setTimeout(function() {
         stat.run();
