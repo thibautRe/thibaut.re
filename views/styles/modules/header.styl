@@ -1,18 +1,21 @@
 header-height = 50px;
 
 .header--main
-  display block
-  height header-height
   width 100%
-  text-align center
   opacity 0
-  background-color c-black2
-  border-bottom 1px solid c-grey
-  box-shadow 0 2px 2px c-shadow
   
   &.is-visible
     animation fade-in .5s 0s forwards
     
+
+.header--main-nav
+  width 100%
+  height header-height
+  text-align center
+  background-color alpha(c-black2, .95)
+  border-bottom 1px solid c-grey
+  box-shadow 0 2px 2px c-shadow
+
 .header--main-me
   display inline-block
   height 60px

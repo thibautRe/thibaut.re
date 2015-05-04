@@ -1,9 +1,11 @@
 extends layout
 
 block header
-  a(href="/").header--main-link
-    img.header--main-me(src="assets/img/thibautremy.jpg", alt="Thibaut REMY")
-    h1.header--main-title THIBAUT.RE
+  header.header--main#js-header--main
+    nav.header--main-nav
+      a(href="/").header--main-link
+        img.header--main-me(src="assets/img/thibautremy.jpg", alt="Thibaut REMY")
+        h1.header--main-title THIBAUT.RE
 
 block body
   .main-container
