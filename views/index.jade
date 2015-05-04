@@ -1,15 +1,18 @@
 extends layout
 
 block header
-  h1 THIBAUT.RE
+  h1.header--main-title THIBAUT.RE
 
 block body
   .main-container
-    .intro
+    .intro#js-intro
       .intro-1 Hi
       .intro-2
         | I'm 
-        span#js-carrousel-intro.carrousel Thibaut
+        span#js-carrousel-intro.intro-carrousel Thibaut
+
+    .projects#js-projects
+      h2 My projects
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")
@@ -32,5 +35,24 @@ block scripts
     ];
     carrousel.options.runOnce = true;
     carrousel.options.initialSpeed = 1000;
-    carrousel.options.finalSpeed = 20;
-    carrousel.run();
+    carrousel.options.finalSpeed = 100;
+
+    // Hide the intro, show the header
+    carrousel.setFinalCallback(function() {
+      var header = document.getElementById('js-header--main');
+      var intro  = document.getElementById('js-intro');
+      var projects  = document.getElementById('js-projects');
+      setTimeout(function() {
+        header.className += " is-visible";
+        intro.className += " is-ready";
+        projects.className += " is-ready";
+        setTimeout(function() {
+          intro.className += " is-hidden";
+          projects.className += " is-visible";
+        }, 500);
+
+      }, 1500);
+    });
+    setTimeout(function() {
+      carrousel.run();
+    }, 3200);

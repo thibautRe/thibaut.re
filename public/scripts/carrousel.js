@@ -5,7 +5,7 @@ var Carrousel = function(elmt) {
     this.options = {};
     this.words = [];
     this._currentIndex = 0;
-    this.setSpeed(1);
+    this.setSpeed(1000);
 };
 
 Carrousel.prototype.setWords = function(words) {
@@ -54,6 +54,5 @@ Carrousel.prototype._getCurrentSpeed = function() {
     var init = Math.log(this.options.initialSpeed);
     var end = Math.log(this.options.finalSpeed);
     var speed = Math.pow(Math.E, init*(1-fac) + end*fac);
-    console.log(speed);
     return speed;
 };

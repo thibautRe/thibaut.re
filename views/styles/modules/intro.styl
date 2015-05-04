@@ -5,10 +5,22 @@
   text-align center
   letter-spacing 5px
   
+  &.is-ready
+    animation fade-out .5s 0s forwards
+  
+  &.is-hidden
+    display none
+
+.intro-1
+  opacity 0
+  animation fade-in .5s 1s forwards
+
 .intro-2
+  opacity 0
+  animation fade-in .5s 2.5s forwards
   margin-left 170px
 
-.carrousel
+.intro-carrousel
   display inline-block
   width 350px
   text-align left
