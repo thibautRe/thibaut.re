@@ -1,7 +1,8 @@
 extends layout
 
 block header
-  h1.header--main-title THIBAUT.RE
+  a(href="/").header--main-link
+    h1.header--main-title THIBAUT.RE
 
 block body
   .main-container
@@ -14,16 +15,16 @@ block body
     .projects#js-projects
       h2 My projects
 
-      .projectcard
+      a.projectcard(href="#")
         h3.projectcard-title SCPWNR*
         p.projectcard-desc SCPWNR
 
-      .projectcard
+      a.projectcard(href="#")
         h3.projectcard-title INTech Robot
         p.projectcard-desc.
           A robot for the French Robotic Tournament
 
-      .projectcard
+      a.projectcard(href="#")
         h3.projectcard-title Lorem ipsum
         p.projectcard-desc Dolore sit amet
 

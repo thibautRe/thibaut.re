@@ -4,15 +4,26 @@
   
   &.is-ready
     display block
-    
+
   &.is-visible
     animation fade-in .5s forwards
-    
+
 .projectcard
   background-color #14191B
   border 1px solid #222
   border-radius 4px
   display block
   float left
-  width 50%
+  width 40%
+  margin 15px
   padding 15px
+  color inherit
+  text-decoration none
+  
+.projectcard-title
+  margin 0
+  transition color .3s
+  
+  .projectcard:hover &
+    color #5C84E3
+  
