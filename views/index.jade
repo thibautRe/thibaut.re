@@ -5,5 +5,32 @@ block header
 
 block body
   .main-container
-    p Hello
+    .intro
+      .intro-1 Hi
+      .intro-2
+        | I'm 
+        span#js-carrousel-intro.carrousel Thibaut
 
+block scripts
+  script(src="scripts/carrousel.js", type="text/javascript")
+  script(type="text/javascript").
+    var carrousel = new Carrousel(document.getElementById('js-carrousel-intro'));
+    carrousel.words = [
+      "Thibaut",
+      "an engineer",
+      "a hacker",
+      "a designer",
+      "an entrepreuneur",
+      "an explorer",
+      "an artist",
+      "a drawer",
+      "a musician",
+      "a coffee drinker",
+      "a ninja",
+      "a web enthusiast",
+      "Thibaut"
+    ];
+    carrousel.options.runOnce = true;
+    carrousel.options.initialSpeed = 1000;
+    carrousel.options.finalSpeed = 20;
+    carrousel.run();
