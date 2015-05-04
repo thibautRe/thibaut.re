@@ -29,7 +29,11 @@ header-stats-height = 250px
   border 2px solid c-white
   border-radius 1000px
   box-shadow 0 0 20px alpha(c-white, 0.7)
-
+  transform scale(0)
+  transition transform .5s e-bounceout
+  
+  .header--main.is-visible &
+    transform scale(1)
 
 .header--main-stats-title
   letter-spacing 2px
