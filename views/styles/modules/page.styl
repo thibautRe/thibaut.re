@@ -1,17 +1,28 @@
+html
+  overflow-y scroll
+
 body
   background-color c-black
   color c-white
-  
+
+body, html
+  margin 0
+  padding 0
+  width 100%
+
 .body-wrapper
   width 100%
   background-color c-black
-  
+
 .content
   display none
   opacity 0
+  width 780px
+  margin 0px auto
+  padding 40px 0
   
   &.is-ready
     display block
-
+  
   &.is-visible
     animation fade-in .5s forwards
