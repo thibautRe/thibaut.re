@@ -12,7 +12,7 @@ block body
         | I'm 
         span#js-carrousel-intro.intro-carrousel Thibaut
 
-    .projects#js-projects
+    .content#js-content
       h2.projects-title My projects
         small.projects-title-desc Some projects I've been working on
 
@@ -124,14 +124,14 @@ block scripts
     carrousel.setFinalCallback(function() {
       var header = document.getElementById('js-header--main');
       var intro  = document.getElementById('js-intro');
-      var projects  = document.getElementById('js-projects');
+      var content  = document.getElementById('js-content');
       setTimeout(function() {
         header.className += " is-visible";
         intro.className += " is-ready";
-        projects.className += " is-ready";
+        content.className += " is-ready";
         setTimeout(function() {
           intro.className += " is-hidden";
-          projects.className += " is-visible";
+          content.className += " is-visible";
         }, 500);
 
       }, 1500);
