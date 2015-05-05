@@ -11,6 +11,7 @@
     "grunt-contrib-stylus": "^0.21.0",
     "grunt-contrib-watch": "^0.6.1",
     "jade": "1.9.*",
+    "mongodb": "2.0.*",
     "stylus": "0.50.*"
   }
 }
