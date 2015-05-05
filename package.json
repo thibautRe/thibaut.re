@@ -6,6 +6,7 @@
     "build": "jade views/index.jade --out public && stylus views/styles/index.styl --out public/"
   },
   "dependencies": {
+    "express": "4.12.*",
     "jade": "1.9.*",
     "stylus": "0.50.*"
   }
