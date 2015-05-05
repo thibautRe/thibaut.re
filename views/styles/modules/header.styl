@@ -2,11 +2,13 @@
   width 100%
   opacity 0
   display none
+  visibility hidden
   
   &.is-ready
     display block
     
   &.is-visible
+    visibility visible
     animation fade-in .5s 0s forwards
     
 .header--main-stats
@@ -79,7 +81,7 @@
   transform translate(0, -150%)
   transition transform .4s
   
-  &[data-sticky="true"]
+  &.is-sticky
     transform translate(0,0)
 
 .header--main-me
