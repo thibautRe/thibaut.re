@@ -51,84 +51,23 @@ block body
       small.content-title-desc Some projects I've been working on
 
     .projectcards.clearfix
-      a.projectcard(href="#")
-        .projectcard-imgwrapper
-          img(src="assets/img/thumbs/scpwnr.jpg").projectcard-img
-          .projectcard-imgtriangles
+      each project in projects
+        a.projectcard(href="/project/" + project.urlname)
+          .projectcard-imgwrapper
+            img(src=project.thumb_url).projectcard-img
+            .projectcard-imgtriangles
 
-        .projectcard-content
-          header.projectcard-header
-            h3.projectcard-title SCPWNR* 
-              small.projectcard-subtitle Webapp
-          p.projectcard-desc.
-            SCPWNR is a Webapp whose purpose is to
-            download SoundCloud tracks, lists or artists
-            page in a local folder. It was a personnal project
-            I did for my own needs.
+          .projectcard-content
+            header.projectcard-header
+              h3.projectcard-title= project.name
+                small.projectcard-subtitle= project.type
+            p.projectcard-desc= project.description
 
-          h3 Technologies
-          p.
-            HTML5, CasperJS, KnockoutJS, NodeJS, Express.IO
-
-
-      a.projectcard(href="#")
-        .projectcard-imgwrapper
-          img(src="assets/img/thumbs/robot.jpg").projectcard-img
-          .projectcard-imgtriangles
-
-        .projectcard-content
-          header.projectcard-header
-            h3.projectcard-title INTech
-              small.projectcard-subtitle Robot
-          p.projectcard-desc.
-            This was a student project. We had to imagine,
-            design and develop an autonomous robot for
-            the French Robotic Tournament. The robot had
-            to perform several tasks and obtain more
-            points than its opponent. Additionaly, it was
-            not allowed to bump in its opponent.
-
-          h3 Technologies
-          p.
-            C++, Python, AVR Microships
-
-
-      a.projectcard(href="#")
-        .projectcard-imgwrapper
-          img(src="assets/img/thumbs/domora_web.jpg").projectcard-img
-          .projectcard-imgtriangles
-
-        .projectcard-content
-          header.projectcard-header
-            h3.projectcard-title Domora.com
-              small.projectcard-subtitle Website
-          p.projectcard-desc.
-            The website for my Start-up, Domora.
-            We wanted a modern website without the boostrap-like
-            aspect.
-
-          h3 Technologies
-          p.
-            HTML5, LESS, Javascript, Symfony2
-
-      a.projectcard(href="#")
-        .projectcard-imgwrapper
-          img(src="assets/img/thumbs/thibaut.re.jpg").projectcard-img
-          .projectcard-imgtriangles
-
-        .projectcard-content
-          header.projectcard-header
-            h3.projectcard-title Thibaut.re
-              small.projectcard-subtitle Website
-          p.projectcard-desc.
-            This very website. Its purpose is to display
-            my different work, and optionnaly to show a
-            demo of each work
-
-          h3 Technologies
-          p.
-            HTML5, Jade, Stylus, Javascript
-
+            h3 Technologies
+              ul.projectcard-techs
+                each tech in project.technologies
+                  li.projectcard-tech= tech
+                
     h2.content-title Hire-me
       small.content-title-desc I'm currently available for hire !
 
