@@ -1,5 +1,5 @@
 var express = require('express');
-
+var projects = require('./src/projects')
 var app = express();
 
 app.set('views', __dirname + '/views');
@@ -7,7 +7,9 @@ app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
 app.use(express.static('public'));
 app.get("/", function(req, res) {
-    res.render("index");
+    projects.getAll(function(allProjects) {
+        res.render("index", {projects: allProjects});
+    });
 });
 
 var server = app.listen(3100, function () {
