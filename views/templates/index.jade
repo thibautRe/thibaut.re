@@ -41,38 +41,39 @@ block intro
       span#js-carrousel-intro.intro-carrousel Thibaut
 
 block body
-  .content
-    nav.header--main-nav#js-header-nav
-      a(href="/").header--main-link
-        img.header--main-me(src="assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
-        h1.header--main-title THIBAUT.RE
+  section.body-wrapper#js-content
+    .content
+      nav.header--main-nav#js-header-nav
+        a(href="/").header--main-link
+          img.header--main-me(src="assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
+          h1.header--main-title THIBAUT.RE
 
-    h2.content-title My projects
-      small.content-title-desc Some projects I've been working on
+      h2.content-title My projects
+        small.content-title-desc Some projects I've been working on
 
-    .projectcards.clearfix
-      each project in projects
-        a.projectcard(href="/project/" + project.urlname)
-          .projectcard-imgwrapper
-            img(src=project.thumb_url).projectcard-img
-            .projectcard-imgtriangles
+      .projectcards.clearfix
+        each project in projects
+          a.projectcard(href="/project/" + project.url_name)
+            .projectcard-imgwrapper
+              img(src=project.thumb_url).projectcard-img
+              .projectcard-imgtriangles
 
-          .projectcard-content
-            header.projectcard-header
-              h3.projectcard-title= project.name
-                small.projectcard-subtitle= project.type
-            p.projectcard-desc= project.description
+            .projectcard-content
+              header.projectcard-header
+                h3.projectcard-title= project.name
+                  small.projectcard-subtitle= project.type
+              p.projectcard-desc= project.description
 
-            h3 Technologies
-              ul.projectcard-techs
-                each tech in project.technologies
-                  li.projectcard-tech= tech
-                
-    h2.content-title Hire-me
-      small.content-title-desc I'm currently available for hire !
+              h3 Technologies
+                ul.projectcard-techs
+                  each tech in project.technologies
+                    li.projectcard-tech= tech
+                  
+      h2.content-title Hire-me
+        small.content-title-desc I'm currently available for hire !
 
-    p.
-      Just write me your offer at hire-me@thibaut.re
+      p.
+        Just write me your offer at hire-me@thibaut.re
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")

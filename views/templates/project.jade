@@ -1,0 +1,19 @@
+extends ../layout/base
+
+block title
+  title= project.name + " | T H I B A U T . R E"
+
+block body
+  .body-wrapper.body-wrapper--small.is-ready.is-finished
+    .content.content--text
+      nav.header--main-nav.is-sticky
+        a(href="/").header--main-link
+          img.header--main-me(src="/assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
+          h1.header--main-title THIBAUT.RE
+
+      h2= project.name
+        small= project.type
+
+      p= project.description
+
+

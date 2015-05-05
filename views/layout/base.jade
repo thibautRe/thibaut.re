@@ -3,18 +3,15 @@ html
   head
     meta(charset='utf8')
     //base(href="/")
-    title T H I B A U T . R E
-    link(href="index.css", rel="stylesheet", type="text/css")
+    block title
+      title T H I B A U T . R E
+    link(href="/index.css", rel="stylesheet", type="text/css")
 
   body
     block header
 
-    section.body-wrapper#js-content
-      block body
+    block body
 
     block intro
-
-    footer.footer--main
-      block footer
 
     block scripts

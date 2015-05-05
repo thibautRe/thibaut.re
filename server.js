@@ -12,6 +12,12 @@ app.get("/", function(req, res) {
     });
 });
 
+app.get("/project/:urlname", function(req, res) {
+    projects.get(req.params.urlname, function(project) {
+        res.render("project", {project: project});
+    });
+});
+
 var server = app.listen(3100, function () {
     var host = server.address().address;
     var port = server.address().port;
