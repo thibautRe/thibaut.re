@@ -19,6 +19,11 @@
   padding 15px
   background-color c-black2
   z-index -1
+  transform translate(0, -20%)
+  transition transform .5s e-bounceout
+  
+  .header--main.is-visible &
+    transform translate(0, 0)
   
 .header--main-stats-me
   display block
@@ -65,7 +70,6 @@
   color c-accent
   font-size 12px
   letter-spacing 0.5px
-  text-shadow 0 0 25px alpha(c-accent, 0.6)
 
 .header--main-nav
   position fixed
