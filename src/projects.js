@@ -7,7 +7,7 @@ module.exports = {
             var collection = db.collection("projects");
 
             collection.find({}).toArray(function(err, projects) {
-                callback(projects);
+                callback(err, projects);
                 db.close();
             });
         });
@@ -16,7 +16,7 @@ module.exports = {
         MongoClient.connect(mongoUrl, function(err, db) {
             var collection = db.collection("projects");
             collection.findOne({url_name: url_name}, function(err, project) {
-                callback(project);
+                callback(err, project);
                 db.close();
             });
         });
