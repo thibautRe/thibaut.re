@@ -2,6 +2,8 @@ var StickyHeader = function(elmt, scrollLimit) {
     this.elmt = elmt;
     this.scrollLimit = scrollLimit;
     this._stickyClassName = "is-sticky";
+
+    this.check();
 };
 
 StickyHeader.prototype.run = function() {

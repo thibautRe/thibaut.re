@@ -177,8 +177,10 @@ block scripts
         content.className += " is-ready";
         setTimeout(function() {
           intro.className += " is-hidden";
-
           content.className += " is-visible";
+          setTimeout(function() {
+            content.className += " is-finished";
+          }, 500);
         }, 500);
 
       }, 1500);
