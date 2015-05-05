@@ -3,13 +3,13 @@ module.exports = function(grunt) {
     stylus: {
       compile: {
         files: {
-          'public/index.css': 'views/styles/index.styl', 
+          'public/index.css': 'styles/index.styl', 
         }
       }
     },
     watch: {
       stylus: {
-        files: 'views/styles/**/*.styl',
+        files: 'styles/**/*.styl',
         tasks: ['stylus']
       }
     }
