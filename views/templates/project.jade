@@ -8,14 +8,23 @@ block content
     h2.project-title= project.name
       small= project.type
 
+      .project-links
+        each link in project.links
+          a.project-link(href=link.url, target="_blank")
+            i.fa(class=link.fa_icon)
+            span.project-link-name= link.name
+
     img.project-image(src=project.thumb_url)
 
-    h3 Description
+    h3.project-subtitle
+      i.fa.fa-pencil 
+      | Description
     p.project-desc= project.description
 
-    h3 Technologies
+    h3.project-subtitle
+      i.fa.fa-gear 
+      | Technologies 
 
     ul.project-techs
     each tech in project.technologies
       li.project-tech= tech
-
