@@ -3,4 +3,3 @@ public/*.html
 public/*.css
 npm-debug.log
 build.bat
-generate_projects.js
