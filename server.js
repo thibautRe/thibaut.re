@@ -1,10 +1,19 @@
 var express = require('express');
+var stylus = require('stylus');
 var projects = require('./src/projects')
 var app = express();
+
 
 app.set('views', __dirname + '/views/templates');
 app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
+app.use(stylus.middleware({
+    src: __dirname + '/styles/',
+    dest: __dirname + '/public/',
+    compile: function(str, path) {
+        return stylus(str).set('filename', path);
+    }
+}));
 app.use(express.static('public'));
 
 app.get("/", function(req, res) {
