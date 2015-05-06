@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "thibaut.re's website",
   "scripts": {
+    "install": "grunt",
     "build": "grunt && node server"
   },
   "dependencies": {
