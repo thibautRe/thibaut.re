@@ -103,3 +103,44 @@ projectcard-padding = 15px
     transform rotate(45deg) translate(70%, 0%);
     transition .5s .2s
     
+// project page
+
+.project-wrapper
+  padding 20px
+  background-color c-black2
+  border 1px solid c-grey
+  border-radius 4px
+  box-shadow 0 2px 3px alpha(black, 0.6)
+  
+.project-title
+  margin-top 3px
+  padding-bottom 5px
+  border-bottom 1px solid c-black
+  font-size 17px
+  
+  & small
+    display inline-block
+    color c-grey3
+    
+    &:before
+      display inline-block
+      margin 0 10px
+      content: "-"
+      
+.project-image
+  display block
+  float left
+  max-height 200px
+  margin-right 15px
+  border 2px solid c-white
+  border-radius 4px
+  box-shadow 0 2px 3px alpha(c-black, 0.6)
+  
+.project-tech
+  display inline-block
+  margin 0 2px
+  padding 2px 7px
+  border-radius 100px
+  background-color c-grey2
+  text-shadow 0 0 1px c-black  
+  list-style-type none
