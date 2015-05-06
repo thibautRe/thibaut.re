@@ -18,7 +18,9 @@ var projects = [
             "ExpressJS",
             "Sockets.IO"
         ],
-        github_url: "https://github.com/thibautre/scpwnr"
+        links: [
+            {url:"https://github.com/thibautre/scpwnr", fa_icon:"fa-github", name: "Github"}
+        ]
     }, {
         name: "INTech",
         url_name: "intech",
@@ -29,6 +31,9 @@ var projects = [
             "C++",
             "Python",
             "AVR Microchips"
+        ],
+        links: [
+            {url:"https://www.youtube.com/watch?v=nhUJaroAsVs", fa_icon:"fa-youtube", name: "Youtube"}
         ]
     }, {
         name: "Domora.com",
@@ -41,6 +46,9 @@ var projects = [
             "LESS",
             "Javascript",
             "Symfony2"
+        ],
+        links: [
+            {url:"http://domora.com", fa_icon:"fa-link", name: "Website"}
         ]
     }, {
         name: "Thibaut.re",
@@ -56,6 +64,19 @@ var projects = [
             "NodeJS",
             "ExpressJS",
             "MongoDB"
+        ],
+        links: []
+    }, {
+        name: "Go Raytracer",
+        url_name: "go-raytracer",
+        type: "Software",
+        thumb_url: "/assets/img/thumbs/go-raytracer.jpg",
+        description: "A raytracer written in Golang, currently in developpement",
+        technologies: [
+            "Golang"
+        ],
+        links: [
+            {url:"http://github.com/thibautre/go-raytracer", fa_icon:"fa-github", name: "Github"}
         ]
     }
 ]
