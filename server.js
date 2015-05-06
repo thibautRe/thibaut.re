@@ -3,6 +3,9 @@ var stylus = require('stylus');
 var projects = require('./src/projects')
 var app = express();
 
+var options = {
+    fastIntro: true
+};
 
 app.set('views', __dirname + '/views/templates');
 app.set('view engine', 'jade');
@@ -18,7 +21,7 @@ app.use(express.static('public'));
 
 app.get("/", function(req, res) {
     projects.getAll(function(err, allProjects) {
-        res.render("index", {projects: allProjects});
+        res.render("index", {projects: allProjects, options: options});
     });
 });
 
@@ -27,7 +30,7 @@ app.get("/project/:urlname", function(req, res) {
         if (err != null || project == null) {
             return error404Handler(req, res);
         }
-        res.render("project", {project: project});
+        res.render("project", {project: project, options: options});
     });
 });
 
