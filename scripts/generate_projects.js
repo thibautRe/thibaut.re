@@ -15,7 +15,8 @@ var projects = [
             "CasperJS",
             "KnockoutJS",
             "NodeJS",
-            "Express.IO"
+            "ExpressJS",
+            "Sockets.IO"
         ],
         github_url: "https://github.com/thibautre/scpwnr"
     }, {
