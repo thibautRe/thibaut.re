@@ -1,0 +1,13 @@
+extends ../layout/base
+
+block title
+  title= "Demo " + project.name + " | T H I B A U T . R E"
+
+block body
+  nav.header--main-nav.is-sticky
+    a(href="/").header--main-link
+      img.header--main-me(src="/assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
+      h1.header--main-title THIBAUT.RE
+
+  .project-demo-iframewrapper
+    iframe.project-demo-iframe(src=project.demo.url)

@@ -9,7 +9,7 @@ var projects = [
         url_name: "scpwnr",
         type: "Webapp",
         thumb_url: "/assets/img/thumbs/scpwnr.jpg",
-        description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder. It was a personnal project I did for my own needs.",
+        description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
         technologies: [
             "HTML5",
             "CasperJS",
@@ -19,8 +19,12 @@ var projects = [
             "Sockets.IO"
         ],
         links: [
-            {url:"https://github.com/thibautre/scpwnr", fa_icon:"fa-github", name: "Github"}
-        ]
+            {url:"https://github.com/thibautre/scpwnr", fa_icon:"fa-github", name: "Github"},
+            {url:"/demo/scpwnr", fa_icon:"fa-rocket", name:"Demo"}
+        ],
+        demo: {
+            url:"http://thibaut.re:3000"
+        }
     }, {
         name: "INTech",
         url_name: "intech",

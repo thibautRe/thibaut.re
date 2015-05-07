@@ -34,6 +34,15 @@ app.get("/project/:urlname", function(req, res) {
     });
 });
 
+app.get("/demo/:urlname", function(req, res) {
+    projects.get(req.params.urlname, function(err, project) {
+        if (err != null || project == null) {
+            return error404Handler(req, res);
+        }
+        res.render("demo", {options: options, project: project});
+    })
+});
+
 var error404Handler = function(req, res) {
     res.status(400);
     res.render('errors/404.jade');
