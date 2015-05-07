@@ -62,12 +62,14 @@ block body
               header.projectcard-header
                 h3.projectcard-title= project.name
                   small.projectcard-subtitle= project.type
-              p.projectcard-desc= project.description
 
-              h3 Technologies
-                ul.projectcard-techs
-                  each tech in project.technologies
-                    li.projectcard-tech= tech
+              section.projectcard-body
+                p.projectcard-desc= project.description
+
+                h3 Technologies
+                  ul.projectcard-techs
+                    each tech in project.technologies
+                      li.projectcard-tech= tech
                   
       h2.content-title Hire-me
         small.content-title-desc I'm currently available for hire !
