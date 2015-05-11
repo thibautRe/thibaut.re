@@ -20,8 +20,7 @@ var projects = [
             "Sockets.IO"
         ],
         links: [
-            {url:"https://github.com/thibautre/scpwnr", fa_icon:"fa-github", name: "Github"},
-            {url:"/demo/scpwnr", fa_icon:"fa-rocket", name:"Demo"}
+            {url:"https://github.com/thibautre/scpwnr", fa_icon:"fa-github", name: "Github"}
         ],
         demo: {
             url:"http://thibaut.re:3000"
