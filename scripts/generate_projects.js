@@ -10,6 +10,7 @@ var projects = [
         type: "Webapp",
         thumb_url: "/assets/img/thumbs/scpwnr.jpg",
         description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
+        description_more:"",
         technologies: [
             "HTML5",
             "CasperJS",

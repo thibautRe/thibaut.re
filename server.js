@@ -1,5 +1,6 @@
 var express = require('express');
 var stylus = require('stylus');
+var nib = require('nib');
 var projects = require('./src/projects')
 var app = express();
 
@@ -14,7 +15,7 @@ app.use(stylus.middleware({
     src: __dirname + '/styles/',
     dest: __dirname + '/public/',
     compile: function(str, path) {
-        return stylus(str).set('filename', path);
+        return stylus(str).set('filename', path).use(nib()).import('nib');
     }
 }));
 app.use(express.static('public'));
