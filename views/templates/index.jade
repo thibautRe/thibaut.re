@@ -68,8 +68,10 @@ block body
 
                 h3 Technologies
                   ul.projectcard-techs
-                    each tech in project.technologies
-                      li.projectcard-tech= tech
+                    - var i = 0
+                    while i < Math.min(5, project.technologies.length)
+                      li.projectcard-tech= project.technologies[i]
+                      - i++;
                   
       h2.content-title Hire-me
         small.content-title-desc I'm currently available for hire !
