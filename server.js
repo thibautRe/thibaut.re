@@ -4,10 +4,6 @@ var nib = require('nib');
 var projects = require('./src/projects')
 var app = express();
 
-var options = {
-    fastIntro: true
-};
-
 app.set('views', __dirname + '/views/templates');
 app.set('view engine', 'jade');
 app.engine('jade', require('jade').__express);
@@ -22,7 +18,7 @@ app.use(express.static('public'));
 
 app.get("/", function(req, res) {
     projects.getAll(function(err, allProjects) {
-        res.render("index", {projects: allProjects, options: options});
+        res.render("index", {projects: allProjects});
     });
 });
 
@@ -31,7 +27,7 @@ app.get("/project/:urlname", function(req, res) {
         if (err != null || project == null) {
             return error404Handler(req, res);
         }
-        res.render("project", {project: project, options: options});
+        res.render("project", {project: project});
     });
 });
 
@@ -40,8 +36,8 @@ app.get("/demo/:urlname", function(req, res) {
         if (err != null || project == null) {
             return error404Handler(req, res);
         }
-        res.render("demo", {options: options, project: project});
-    })
+        res.render("demo", {project: project});
+    });
 });
 
 var error404Handler = function(req, res) {
