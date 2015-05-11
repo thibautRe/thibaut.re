@@ -56,6 +56,22 @@ var projects = [
             {url:"http://domora.com", fa_icon:"fa-link", name: "Website"}
         ]
     }, {
+        name: "Domora Mobile App",
+        url_name: "domora_app",
+        type: "Webapp",
+        thumb_url: "/assets/img/thumbs/domora_app.jpg",
+        description: "The mobile app for my Start-up, Domora. It was a mobile-first hybrid webapp, build with Phonegap/Cordova, and powered by HTML5, LESS and KnockoutJS",
+        technologies: [
+            "HTML5",
+            "LESS",
+            "KnockoutJS",
+            "RequireJS",
+            "Grunt",
+            "Mocha",
+            "Webfont"
+        ],
+        links: []
+    }, {
         name: "Thibaut.re",
         url_name: "thibaut.re",
         type: "Website",
