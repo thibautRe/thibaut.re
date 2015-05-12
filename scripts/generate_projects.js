@@ -9,7 +9,7 @@ var projects = [
         url_name: "scpwnr",
         type: "Webapp",
         date: "2014",
-        thumb_url: "/assets/img/thumbs/scpwnr.jpg",
+        thumb_url: "http://thibaut.re/static/scpwnr.jpg",
         description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
         technologies: [
             "HTML5",
@@ -30,7 +30,7 @@ var projects = [
         url_name: "intech",
         type: "Robot",
         date: "2011",
-        thumb_url: "/assets/img/thumbs/robot.jpg",
+        thumb_url: "http://thibaut.re/static/robot.jpg",
         description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks and obtain more points than its opponent. Additionaly, it was not allowed to bump in its opponent.",
         technologies: [
             "C++",
@@ -45,7 +45,7 @@ var projects = [
         url_name: "domora.com",
         type: "Website",
         date: "2014",
-        thumb_url: "/assets/img/thumbs/domora_web.jpg",
+        thumb_url: "http://thibaut.re/static/domora_web.jpg",
         description: "The website for my Start-up, Domora. We wanted a modern website without the boostrap-like aspect.",
         technologies: [
             "HTML5",
@@ -61,7 +61,7 @@ var projects = [
         url_name: "domora_app",
         type: "Webapp",
         date: "2014",
-        thumb_url: "/assets/img/thumbs/domora_app.jpg",
+        thumb_url: "http://thibaut.re/static/domora_app.jpg",
         description: "The mobile app for my Start-up, Domora. It was a mobile-first hybrid webapp, build with Phonegap/Cordova, and powered by HTML5, LESS and KnockoutJS",
         technologies: [
             "HTML5",
@@ -78,7 +78,7 @@ var projects = [
         url_name: "thibaut.re",
         type: "Website",
         date: "2015",
-        thumb_url: "/assets/img/thumbs/thibaut.re.jpg",
+        thumb_url: "http://thibaut.re/static/thibaut.re.jpg",
         description: "This very website. Its purpose is to display my different work, and optionnaly to show a demo of each work",
         technologies: [
             "HTML5",
@@ -95,7 +95,7 @@ var projects = [
         url_name: "go-raytracer",
         type: "Software",
         date: "2015",
-        thumb_url: "/assets/img/thumbs/go-raytracer.jpg",
+        thumb_url: "http://thibaut.re/static/go-raytracer.jpg",
         description: "A raytracer written in Golang, currently in developpement",
         technologies: [
             "Golang"
