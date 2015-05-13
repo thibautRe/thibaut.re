@@ -89,7 +89,10 @@ var projects = [
             "ExpressJS",
             "MongoDB"
         ],
-        links: []
+        links: [
+            {url: "https://github.com/thibautre/thibaut.re", fa_icon:"fa-github", name:"GitHub"},
+            {url: "/", fa_icon: "fa-link", name:"Website"}
+        ]
     }, {
         name: "Go Raytracer",
         url_name: "go-raytracer",
@@ -101,7 +104,7 @@ var projects = [
             "Golang"
         ],
         links: [
-            {url:"http://github.com/thibautre/go-raytracer", fa_icon:"fa-github", name: "Github"}
+            {url:"http://github.com/thibautre/go-raytracer", fa_icon:"fa-github", name: "GitHub"}
         ]
     }
 ]
