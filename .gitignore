@@ -4,3 +4,5 @@ public/*.css
 npm-debug.log
 build.bat
 *.db
+thibaut.re.sublime-project
+thibaut.re.sublime-workspace
