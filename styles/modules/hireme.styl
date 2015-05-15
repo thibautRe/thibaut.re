@@ -1,4 +1,5 @@
 .hireme-wrapper
+  position relative
   background c-black2
   border-radius 4px
   border 1px solid c-grey
@@ -7,11 +8,17 @@
   
   
 .hireme-cvlink
-  width 100%
-  display inline-block
+  width 40%
+  display block
+  float left
   text-align center
   font-size 60px
   text-shadow 0 1px 2px alpha(black, 0.5)
+  
+  @media m-phablet-s
+    float none
+    width 100%
+    
   
   .fa-stack
     position relative
@@ -48,3 +55,14 @@
   
   .hireme-cvlink:hover &
     transform translate(0, 10px)
+
+.hireme-mail
+  display block
+  float left
+  width 60%
+  color c-grey3
+  
+  @media m-phablet-s
+    float none
+    width 100%
+    text-align center

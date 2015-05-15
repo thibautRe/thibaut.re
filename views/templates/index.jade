@@ -73,9 +73,9 @@ block body
                       li.projectcard-tech= project.technologies[i]
                       - i++;                  
 
-      .hireme-wrapper
-        h2.content-title.content-title--nohead Hire-me
-          small.content-title-desc I'm currently available for hire !
+      .hireme-wrapper.clearfix
+        h2.content-title.content-title--nohead Hire me !
+          small.content-title-desc I'm currently available for hire.
 
         a(href="//thibaut.re/static/CV-Thibaut-REMY.pdf").hireme-cvlink.link
           span.fa-stack
@@ -83,6 +83,10 @@ block body
             i.fa.fa-file-pdf-o.fa-stack-1x
           .hireme-cvlink-text CV 
             small (.pdf)
+
+        p.hireme-mail Just write me your offer at 
+          a(href="mailto:hire-me@thibaut.re?subject=Let's%20work%20Together", target="_blank").link hire-me@thibaut.re
+          | &nbsp;. I'll check it out soon.
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")
