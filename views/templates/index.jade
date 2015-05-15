@@ -71,13 +71,18 @@ block body
                     - var i = 0
                     while i < Math.min(5, project.technologies.length)
                       li.projectcard-tech= project.technologies[i]
-                      - i++;
-                  
-      h2.content-title Hire-me
-        small.content-title-desc I'm currently available for hire !
+                      - i++;                  
 
-      p.
-        Just write me your offer at hire-me@thibaut.re
+      .hireme-wrapper
+        h2.content-title.content-title--nohead Hire-me
+          small.content-title-desc I'm currently available for hire !
+
+        a(href="//thibaut.re/static/CV-Thibaut-REMY.pdf").hireme-cvlink.link
+          span.fa-stack
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-file-pdf-o.fa-stack-1x
+          .hireme-cvlink-text CV 
+            small (.pdf)
 
 block scripts
   script(src="scripts/carrousel.js", type="text/javascript")

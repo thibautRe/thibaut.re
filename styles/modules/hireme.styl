@@ -1,0 +1,50 @@
+.hireme-wrapper
+  background c-black2
+  border-radius 4px
+  border 1px solid c-grey
+  box-shadow 0 1px 4px alpha(black, 0.6)
+  padding 15px
+  
+  
+.hireme-cvlink
+  width 100%
+  display inline-block
+  text-align center
+  font-size 60px
+  text-shadow 0 1px 2px alpha(black, 0.5)
+  
+  .fa-stack
+    position relative
+    transition .4s
+
+  .fa:first-child
+    color c-grey
+    transition .4s
+    
+  .fa:last-child
+    color c-white
+  
+  &:hover
+    
+    .fa-stack
+      transform translate(0, -5px)
+      
+    .fa:first-child
+      color c-accent
+
+.hireme-cvlink-text
+  display block
+  position relative
+  top -37px
+  padding 5px
+  width 120px
+  margin auto
+  font-size 15px
+  border-radius 4px
+  box-shadow 0 -3px 8px alpha(black, 0.5)
+  background c-grey2
+  border 1px solid c-grey3
+  transition .4s
+  
+  .hireme-cvlink:hover &
+    transform translate(0, 10px)
