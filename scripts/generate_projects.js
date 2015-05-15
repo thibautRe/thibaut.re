@@ -106,6 +106,35 @@ var projects = [
         links: [
             {url:"http://github.com/thibautre/go-raytracer", fa_icon:"fa-github", name: "GitHub"}
         ]
+    }, {
+        name: "Domora 3D Clip",
+        url_name: "domora_3D_clip",
+        type: "3D Clip",
+        date: "2014",
+        thumb_url: "http://thibaut.re/static/domora_clip.jpg",
+        description: "A short advertising clip made for my Start-up, Domora. I wanted a dynamic movie clip to explain the features of our product. Python scripts were used for dynamic animation, like the floor creation at the very beginning.",
+        technologies: [
+            "Blender",
+            "Python"
+        ],
+        links: [
+            {url:"https://www.youtube.com/watch?v=N-XmCWkpoH4", fa_icon:"fa-youtube", name: "Youtube"}
+        ]
+    }, {
+        name: "Domora Crowdfunding Clip",
+        url_name: "domora_crowdfunding_clip",
+        type: "Movie clip",
+        date: "2014",
+        thumb_url: "http://thibaut.re/static/domora_clip2.jpg",
+        description: "The Crowdfunding clip for my Start-up, Domora. We wanted something fresh and easy to understand. My job, aside from designing the content and the story of the clip, was to film and edit the video, adding some 3D effects and nice background music.",
+        technologies: [
+            "Adobe Premiere Pro",
+            "Blender"
+        ],
+        links: [
+            {url:"https://vimeo.com/113258176", fa_icon:"fa-vimeo-square", name: "Vimeo"},
+            {url:"http://igg.me/at/domora", fa_icon:"fa-link", name: "Indiegogo "}
+        ]
     }
 ]
 
