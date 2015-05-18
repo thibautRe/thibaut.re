@@ -53,13 +53,14 @@ projectcard-padding = 15px
   top 0
   left 0
   right 0
+  bottom 0
   z-index 30
   text-shadow 0 0px 2px alpha(c-black, .6)
   
 .projectcard-header
   padding projectcard-padding
-  background-color rgba(7, 7, 8, 0.62)
-  width 110%
+  background-color alpha(black, .8)
+  width 100%
   
 .projectcard-title
   transition color .3s
@@ -68,7 +69,16 @@ projectcard-padding = 15px
     color c-accent
     
 .projectcard-body
+  height 100%
   padding 0 projectcard-padding
+  opacity 0
+  background-color alpha(black, .8)
+  transition .4s
+  
+  .projectcard:hover & {
+    opacity 1
+    transition .3s .4s
+  }
 
 .projectcard-subtitle
   color c-grey3
@@ -84,6 +94,8 @@ projectcard-padding = 15px
     display inline-block
     margin 0 10px
 
+.projectcard-desc
+  margin-top 0
 
 .projectcard-imgwrapper
   position absolute
@@ -97,12 +109,10 @@ projectcard-padding = 15px
   display block
   min-height 100%
   min-width 100%
-  opacity 0.3
   transition .4s
   
   .projectcard:hover &
-    opacity 0.5
-    transform scale(1.15)
+    transform scale(1.05)
     transition .5s .2s
 
 .projectcard-imgtriangles
