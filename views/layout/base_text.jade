@@ -3,10 +3,7 @@ extends base
 block body
   .body-wrapper.body-wrapper--small.is-ready.is-finished
     .content
-      nav.header--main-nav.is-sticky
-        a(href="/").header--main-link
-          img.header--main-me(src="/assets/img/thibautremy.jpg", alt="Thibaut REMY photo")
-          h1.header--main-title THIBAUT.RE
+      include ../includes/header_fixed
       
       block content
         p Text
