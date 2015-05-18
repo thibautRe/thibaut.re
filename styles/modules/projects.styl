@@ -14,6 +14,7 @@
   
 projectcard-size = 358px
 projectcard-padding = 15px
+transitionhover = .2s
 
 .projectcards
   margin-bottom 40px
@@ -33,13 +34,13 @@ projectcard-padding = 15px
   transform translate(0,0)
   overflow hidden
   box-shadow 0 1px 4px alpha(black, 0.6)
-  transition all .3s
+  transition transitionhover
   
   &:hover, &:focus
     border-color c-accent
     
   &:hover
-    transform translate(0px, -5px)
+    //transform translate(0px, -5px)
     box-shadow 0 10px 20px black
     
   @media m-tablet-s
@@ -63,7 +64,7 @@ projectcard-padding = 15px
   width 100%
   
 .projectcard-title
-  transition color .3s
+  transition color transitionhover
   margin 0
   .projectcard:hover &
     color c-accent
@@ -73,11 +74,10 @@ projectcard-padding = 15px
   padding 0 projectcard-padding
   opacity 0
   background-color alpha(black, .8)
-  transition .4s
+  transition transitionhover
   
   .projectcard:hover & {
     opacity 1
-    transition .3s .4s
   }
 
 .projectcard-subtitle
@@ -107,13 +107,17 @@ projectcard-padding = 15px
 .projectcard-img
   position absolute
   display block
-  min-height 100%
-  min-width 100%
-  transition .4s
+  width 100%
+  transition transitionhover
   
   .projectcard:hover &
     transform scale(1.05)
-    transition .5s .2s
+    
+  &.projectcard-img--thumb
+    opacity 0
+    
+    .projectcard:hover &
+      opacity 1
 
 .projectcard-imgtriangles
   position absolute
@@ -121,12 +125,10 @@ projectcard-padding = 15px
   width @height
   box-shadow -35px 0px 0px alpha(c-black, .3), -100px 0px 0px alpha(c-black, .3), -174px 0px 0px alpha(c-black, .2)
   transform rotate(45deg) translate(51%, 0%)
-  transition .4s
+  transition transitionhover
   
   .projectcard:hover &
-    box-shadow -50px 0px 0px alpha(c-black, .3), -140px 0px 0px alpha(c-black, .3), -160px 0px 0px alpha(c-black, .2)
     transform rotate(45deg) translate(70%, 0%);
-    transition .5s .2s
     
 // project page
 

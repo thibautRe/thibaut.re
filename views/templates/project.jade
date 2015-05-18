@@ -15,7 +15,7 @@ block content
             i.fa(class=link.fa_icon)
             span.project-link-name= link.name
 
-    img.project-image(src=project.thumb_url)
+    img.project-image(src=project.img_url)
 
     h3.project-subtitle
       i.fa.fa-pencil 
@@ -24,7 +24,7 @@ block content
 
     h3.project-subtitle
       i.fa.fa-gear 
-      | Technologies 
+      | Technologies
 
     ul.project-techs
     each tech in project.technologies

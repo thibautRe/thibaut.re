@@ -54,7 +54,8 @@ block body
         each project in projects
           a.projectcard(href="/project/" + project.url_name)
             .projectcard-imgwrapper
-              img(src=project.thumb_url).projectcard-img
+              img(src=project.img_url).projectcard-img.projectcard-img--full
+              img(src=project.thumb_url).projectcard-img.projectcard-img--thumb
               .projectcard-imgtriangles
 
             .projectcard-content
@@ -71,7 +72,7 @@ block body
                     - var i = 0
                     while i < Math.min(5, project.technologies.length)
                       li.projectcard-tech= project.technologies[i]
-                      - i++;                  
+                      - i++;
 
       .hireme-wrapper.clearfix
         h2.content-title.content-title--nohead Hire me !
