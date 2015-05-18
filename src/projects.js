@@ -1,5 +1,6 @@
 var MongoClient = require("mongodb").MongoClient
 var mongoUrl = "mongodb://localhost:27017/thibaut-re";
+var md = require('markdown').markdown.toHTML;
 
 module.exports = {
     getAll: function(callback) {
@@ -16,6 +17,9 @@ module.exports = {
         MongoClient.connect(mongoUrl, function(err, db) {
             var collection = db.collection("projects");
             collection.findOne({url_name: url_name}, function(err, project) {
+                if (project.article) {
+                    project.HTMLarticle = md(project.article);
+                }
                 callback(err, project);
                 db.close();
             });

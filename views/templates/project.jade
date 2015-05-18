@@ -32,12 +32,17 @@ block body
             | Technologies
 
           ul.project-techs
-          each tech in project.technologies
-            li.project-tech= tech
+            each tech in project.technologies
+              li.project-tech= tech
 
+        if project.HTMLarticle
+          .projectarticle-wrapper
+            .projectarticle-text!= project.HTMLarticle
 block styles
   style(type="text/css").
-    .theme-color {
+    .theme-color,
+    .projectarticle-text h1,
+    .projectarticle-text a {
       color: #{project.color} !important;
     }
 

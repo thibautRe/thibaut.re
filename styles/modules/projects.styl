@@ -132,7 +132,7 @@ transitionhover = .2s
   padding 20px
   background-color c-black2
   border 1px solid c-grey
-  border-radius 4px
+  border-radius 4px 4px 0 0
   box-shadow 0 2px 3px alpha(black, 0.6)
   
 .project-title
@@ -222,3 +222,19 @@ transitionhover = .2s
   height 100%
   width 100%
   border 0
+
+.projectarticle-wrapper
+  background-color alpha(c-black2, .9)
+  border-radius 0 0 4px 4px
+  padding 20px
+  box-shadow 0 10px 8px -8px black inset, 0 3px 3px alpha(black, .5)
+  border 1px solid c-grey2
+  border-top none
+  
+.projectarticle-text
+  a
+    color c-accent
+    text-decoration none
+    
+    &:hover
+      text-decoration underline
