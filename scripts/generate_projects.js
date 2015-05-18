@@ -31,8 +31,8 @@ var projects = [
         url_name: "intech",
         type: "Robot",
         date: "2011",
-        thumb_url: "http://thibaut.re/static/robot.jpg",
-        img_url: "http://thibaut.re/static/robot-full.jpg",
+        thumb_url: "http://thibaut.re/static/robot2.jpg",
+        img_url: "http://thibaut.re/static/robot2-full.jpg",
         description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks and obtain more points than its opponent. Additionaly, it was not allowed to bump in its opponent.",
         technologies: [
             "C++",
@@ -47,7 +47,8 @@ var projects = [
         url_name: "domora.com",
         type: "Website",
         date: "2014",
-        thumb_url: "http://thibaut.re/static/domora_web.jpg",
+        thumb_url: "http://thibaut.re/static/domoraweb.jpg",
+        img_url: "http://thibaut.re/static/domoraweb-full.jpg",
         description: "The website for my Start-up, Domora. We wanted a modern website without the boostrap-like aspect.",
         technologies: [
             "HTML5",
@@ -63,7 +64,8 @@ var projects = [
         url_name: "domora_app",
         type: "Webapp",
         date: "2014",
-        thumb_url: "http://thibaut.re/static/domora_app.jpg",
+        thumb_url: "http://thibaut.re/static/domorapp.jpg",
+        img_url: "http://thibaut.re/static/domorapp-full.jpg",
         description: "The mobile app for my Start-up, Domora. It was a mobile-first hybrid webapp, build with Phonegap/Cordova, and powered by HTML5, LESS and KnockoutJS",
         technologies: [
             "HTML5",
