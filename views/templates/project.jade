@@ -1,31 +1,46 @@
-extends ../layout/base_text
+extends ../layout/base
+
+block styles
+  style(type="text/css").
+    .theme-color {
+      color: #{project.color} !important;
+    }
+
+    .theme-backgroundcolor {
+      background-color: #{project.color} !important;
+    }
 
 block title
   title= project.name + " | T H I B A U T . R E"
 
-block content
-  .project-wrapper.clearfix
-    h2.project-title= project.name
-      small= project.type
-      small= project.date
+block body
+  .body-wrapper.body-wrapper--small.is-ready.is-finished.theme-backgroundcolor
+    .content
+      include ../includes/header_fixed
+      
+      block content
+        .project-wrapper.clearfix
+          h2.project-title.theme-color= project.name
+            small= project.type
+            small= project.date
 
-      .project-links
-        each link in project.links
-          a.project-link(href=link.url, target="_blank")
-            i.fa(class=link.fa_icon)
-            span.project-link-name= link.name
+            .project-links
+              each link in project.links
+                a.project-link(href=link.url, target="_blank")
+                  i.fa(class=link.fa_icon)
+                  span.project-link-name= link.name
 
-    img.project-image(src=project.img_url)
+          img.project-image(src=project.img_url)
 
-    h3.project-subtitle
-      i.fa.fa-pencil 
-      | Description
-    p.project-desc= project.description
+          h3.project-subtitle
+            i.fa.fa-pencil.theme-color
+            | Description
+          p.project-desc= project.description
 
-    h3.project-subtitle
-      i.fa.fa-gear 
-      | Technologies
+          h3.project-subtitle
+            i.fa.fa-gear.theme-color
+            | Technologies
 
-    ul.project-techs
-    each tech in project.technologies
-      li.project-tech= tech
+          ul.project-techs
+          each tech in project.technologies
+            li.project-tech= tech
