@@ -1,15 +1,5 @@
 extends ../layout/base
 
-block styles
-  style(type="text/css").
-    .theme-color {
-      color: #{project.color} !important;
-    }
-
-    .theme-backgroundcolor {
-      background-color: #{project.color} !important;
-    }
-
 block title
   title= project.name + " | T H I B A U T . R E"
 
@@ -44,3 +34,13 @@ block body
           ul.project-techs
           each tech in project.technologies
             li.project-tech= tech
+
+block styles
+  style(type="text/css").
+    .theme-color {
+      color: #{project.color} !important;
+    }
+
+    .theme-backgroundcolor {
+      background-color: #{project.color} !important;
+    }
