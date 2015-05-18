@@ -9,8 +9,8 @@ var projects = [
         url_name: "scpwnr",
         type: "Webapp",
         date: "2014",
-        thumb_url: "http://thibaut.re/static/scpwnr.jpg",
-        img_url: "http://thibaut.re/static/scpwnr-full.jpg",
+        thumb_url: "http://thibaut.re/static/scpwnr2.jpg",
+        img_url: "http://thibaut.re/static/scpwnr2-full.jpg",
         description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
         technologies: [
             "HTML5",
