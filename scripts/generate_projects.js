@@ -10,6 +10,7 @@ var projects = [
         type: "Webapp",
         date: "2014",
         thumb_url: "http://thibaut.re/static/scpwnr.jpg",
+        img_url: "http://thibaut.re/static/scpwnr-full.jpg",
         description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
         technologies: [
             "HTML5",
@@ -31,6 +32,7 @@ var projects = [
         type: "Robot",
         date: "2011",
         thumb_url: "http://thibaut.re/static/robot.jpg",
+        img_url: "http://thibaut.re/static/robot-full.jpg",
         description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks and obtain more points than its opponent. Additionaly, it was not allowed to bump in its opponent.",
         technologies: [
             "C++",
@@ -99,6 +101,7 @@ var projects = [
         type: "Software",
         date: "2015",
         thumb_url: "http://thibaut.re/static/go-raytracer.jpg",
+        img_url: "http://thibaut.re/static/go-raytracer-full.jpg",
         description: "A raytracer written in Golang, currently in developpement",
         technologies: [
             "Golang"
@@ -112,6 +115,7 @@ var projects = [
         type: "3D Clip",
         date: "2014",
         thumb_url: "http://thibaut.re/static/domora_clip.jpg",
+        img_url: "http://thibaut.re/static/domora_clip-full.jpg",
         description: "A short advertising clip made for my Start-up, Domora. I wanted a dynamic movie clip to explain the features of our product. Python scripts were used for dynamic animation, like the floor creation at the very beginning.",
         technologies: [
             "Blender",
@@ -126,6 +130,7 @@ var projects = [
         type: "Movie clip",
         date: "2014",
         thumb_url: "http://thibaut.re/static/domora_clip2.jpg",
+        img_url: "http://thibaut.re/static/domora_clip2-full.jpg",
         description: "The Crowdfunding clip for my Start-up, Domora. We wanted something fresh and easy to understand. My job, aside from designing the content and the story of the clip, was to film and edit the video, adding some 3D effects and nice background music.",
         technologies: [
             "Adobe Premiere Pro",
