@@ -1,6 +1,6 @@
 var MongoClient = require("mongodb").MongoClient
 var mongoUrl = "mongodb://localhost:27017/thibaut-re";
-var md = require('markdown').markdown.toHTML;
+var md = require('marked');
 
 module.exports = {
     getAll: function(callback) {
