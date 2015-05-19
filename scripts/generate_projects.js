@@ -47,7 +47,16 @@ Also, don't forget to fork the [source code](//github.com/thibautre/scpwnr) !\n\
         color: "#ff9967",
         thumb_url: "http://thibaut.re/static/robot2.jpg",
         img_url: "http://thibaut.re/static/robot2-full.jpg",
-        description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks and obtain more points than its opponent. Additionaly, it was not allowed to bump in its opponent.",
+        description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks in 90 seconds and obtain more points than its opponent.",
+        article: "# The French Robotic Tournament\n\n\
+The French Robotic Tournament is an annual tournament organized by _Planète Sciences_, and gathers every year 200 teams from various background : engineers, students, mechanicians... Every year, each team must build a new robot to perform different tasks according to the new tournament rules. When I participated within my engeering school's team, the rules were fairly simple : the robot had to bring some CDs and pieces of wood back to his camp. He also had to push some pieces of wood located at the border of the 2m×3m table.\n\n\
+The robots are autonomous : they have to carry their own energy and their own intelligence (remote control is forbidden). Also, the robot is not allowed to bump in its opponent, so he must detect his opponent with watever technology (we chose infra-red proximity sensors).\n\n\
+# Full-stack developpement\n\n\
+There are a infinite number of possibilities to create a robot that complies to these rules. Some robots used arms, some used suction cups. Some robots were programmed in Java, some others were designed exclusively with analog components (with no single lines of code). We chose to use AVR microchips (the same that are found on the Arduinos) to control the motors and servomotors, and to get informations from the sensors. These microchips were programmed in C++. For the intelligence level, we chose to use a small BeagleBoard (Raspberry Pi didn't exist at the time) with an embedded Linux, with some Python scripts. These scripts interracted with the microchips through a serial link.\n\n\
+Building a robot from the ground up with a team of 10 friends was awesome, and we were all incredibly happy to finish 9th on 204 teams.\n\n\
+I also made a small video (in French) about our journey in this technological adventure :\n\n\
+<iframe class=\"video\" src=\"https://www.youtube.com/embed/nhUJaroAsVs\"></iframe>\n\
+",
         technologies: [
             "C++",
             "Python",
@@ -189,7 +198,7 @@ In this video, Python scripts were used to produce automatic mechanical animatio
 # Featured in an exhibit show\n\n\
 There is no sound because this video was featured during an exhibit show, where sound was useless. That's also the reason why a high focus on subtitles has been made.\n\n\
 ![Pierre and Nils exhibiting the features of Domora's product to Jean-Paul Huchon, president of Ile-de-France Region](//thibaut.re/static/article/domora3d.jpg)\n\n\
-Also, because in an exhibit show, people went by and wander around trying to find a cool product, we, as a Start-up, had to focus their attention on *our* stand. That was actually the main purpose of this clip : focusing random people's attention in a highly competitive environnement. For this reason, the clip is voluntarily dynamic, with a lot of elements moving on the screen to catch the eye of the audience.\n\n\
+Also, because in an exhibit show people went by and wander around trying to find a cool product, we, as a Start-up, had to focus their attention on *our* stand. That was actually the main purpose of this clip : focusing random people's attention in a highly competitive environnement. For this reason, the clip is voluntarily dynamic, with a lot of elements moving on the screen to catch the eye of the audience.\n\n\
 The whole video has been made in a week.\n\n\
 ## Related\n\n\
 - [Domora Crowdfunding clip](/project/domora_crowdfunding_clip)\n\
