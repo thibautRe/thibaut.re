@@ -13,14 +13,14 @@ var projects = [
         thumb_url: "http://thibaut.re/static/scpwnr2.jpg",
         img_url: "http://thibaut.re/static/scpwnr2-full.jpg",
         description: "SCPWNR is a Webapp whose purpose is to download SoundCloud tracks, lists or artists page in a local folder.",
-        article: "# Scrapping SoundCloud\n\n\
+        article: "# Scraping SoundCloud\n\n\
 I love [SoundCloud](//soundcloud.com). I've discovered a lot of cool songs and have used extensively their website for more than 3 years, liking more than thousand songs and counting.    \n\n\
-One day, I was having fun in the Developper Console, and realized that the .mp3 file was streamed with no security, and that I could eventually find the link to the raw .mp3 for every songs posted on that website.   \n\n\
+One day, I was having fun in the Developper Console of my Firefox, and realized that the `.mp3` file was streamed with no security, and that I could eventually find the link to the raw `.mp3` for every songs posted on that website.   \n\n\
 I wanted to see how easy it was to automate this fastidious process with a script. Of course, the link to the URL was not hardcoded in the song's HTML page  － that would have been way too easy. Instead, I had to run the JS client scripts and see what resources were loaded.\n\n\
-CasperJS, whose original purpose is to run application tests on a website or a webapp, was used for this task. The script is about 150 lines, and can find the .mp3 links for a single song page, an artist page or a playlist page.\n\n\
+CasperJS, whose original purpose is to run application tests on a website or a webapp, was used for this task. The script is about 150 lines, and can find the `.mp3` links for a single song page, an artist page or a playlist page.\n\n\
 # User-_friendlyfying_ SCPWNR*\n\n\
-This script was great but not user-friendly enough. I decided to add a web interface, and an ExpressJS server. Of course, scrapping and downloading a 5Mo .mp3 file takes a lot of time, so I chose to use websockets to notify the client of a download in progress or finished. KnockoutJS was used for front-end automation \n\n\
-As of today (2015/05/09), I am currently porting the CasperJS script to a SpookyJS script. The difference between SpookyJS and CasperJS is that SpookyJS is a NodeJS module, and can be `require`d, thus allowing a better communication between the ExpressJS server and the scrapping script.\n\n\
+This script was great but not user-friendly enough. I decided to add a web interface running on an ExpressJS server. Of course, scraping and downloading a 5Mo `.mp3` file takes a lot of time, so I chose to use websockets to notify the client of a download in progress or finished. KnockoutJS was used for front-end automation \n\n\
+As of today (2015/05/09), I am currently porting the CasperJS script to a SpookyJS script. The difference between SpookyJS and CasperJS is that SpookyJS is a NodeJS module, and can be `require`d, thus allowing a better communication between the ExpressJS server and the scraping script.\n\n\
 Also, don't forget to fork the [source code](//github.com/thibautre/scpwnr) !\n\n\
 ## Related\n\n\
 - [Domora mobile application](/project/domora_app)\n\
@@ -49,10 +49,10 @@ Also, don't forget to fork the [source code](//github.com/thibautre/scpwnr) !\n\
         img_url: "http://thibaut.re/static/robot2-full.jpg",
         description: "This was a student project. We had to imagine, design and develop an autonomous robot for the French Robotic Tournament. The robot had to perform several tasks in 90 seconds and obtain more points than its opponent.",
         article: "# The French Robotic Tournament\n\n\
-The French Robotic Tournament is an annual tournament organized by _Planète Sciences_, and gathers every year 200 teams from various background : engineers, students, mechanicians... Every year, each team must build a new robot to perform different tasks according to the new tournament rules. When I participated within my engeering school's team, the rules were fairly simple : the robot had to bring some CDs and pieces of wood back to his camp. He also had to push some pieces of wood located at the border of the 2m×3m table.\n\n\
+The French Robotic Tournament is an annual tournament organized by _Planète Sciences_, and gathers every year 200 teams from various background : engineers, students, mechanicians... Every year, each team must build a new robot to perform different tasks according to the new tournament rules. When I participated within my engineering school's team, the rules were fairly simple : the robot had to bring some CDs and pieces of wood back to his camp. He also had to push some pieces of wood located at the edges of the 2m×3m table.\n\n\
 The robots are autonomous : they have to carry their own energy and their own intelligence (remote control is forbidden). Also, the robot is not allowed to bump in its opponent, so he must detect his opponent with watever technology (we chose infra-red proximity sensors).\n\n\
 # Full-stack developpement\n\n\
-There are a infinite number of possibilities to create a robot that complies to these rules. Some robots used arms, some used suction cups. Some robots were programmed in Java, some others were designed exclusively with analog components (with no single lines of code). We chose to use AVR microchips (the same that are found on the Arduinos) to control the motors and servomotors, and to get informations from the sensors. These microchips were programmed in C++. For the intelligence level, we chose to use a small BeagleBoard (Raspberry Pi didn't exist at the time) with an embedded Linux, with some Python scripts. These scripts interracted with the microchips through a serial link.\n\n\
+There are an infinite number of possibilities to create a robot that complies to these rules. Some robots used arms, some used suction cups. Some robots were programmed in Java, some others were designed exclusively with analog components (with no single lines of code). We chose to use AVR microchips (the same that are found on the Arduinos) to control the engines and servomotors, and to get informations from the sensors. These microchips were programmed in C++. For the intelligence level, we chose to use a small BeagleBoard (Raspberry Pi didn't exist at the time) with an embedded Linux, with some Python scripts. These scripts interacted with the microchips through a serial link.\n\n\
 Building a robot from the ground up with a team of 10 friends was awesome, and we were all incredibly happy to finish 9th on 204 teams.\n\n\
 I also made a small video (in French) about our journey in this technological adventure :\n\n\
 <iframe class=\"video\" src=\"https://www.youtube.com/embed/nhUJaroAsVs\"></iframe>\n\
@@ -114,7 +114,7 @@ Adding a *press* or a *contact* part in the website was then a simple trick : on
 # Designed for Usability\n\n\
 \
 Domora's mobile app has been thought from the beginning for an everyday use, with a high focus on accessibility. Because of its very purpose, we wanted to create something both powerful and ridiculously simple to use, even for non tech-friendly people.  \n\n\
-We designed 2 types of concepts : *devices* and *panels*. Panels are intelligently generated by the application given the number and types of devices owned by the user. For instance, if a user owns a TV and a DVD player, the app will automatically generate a \"Watch a Movie\" panel. Dead simple. \n\n\
+We designed 2 types of concepts : *devices* and *panels*. Panels are smartly generated by the application given the number and types of devices owned by the user. For instance, if a user owns a TV and a DVD player, the app will automatically generate a \"Watch a Movie\" panel. Dead simple. \n\n\
 The user can modify a pannel. He can add, move or remove widgets that can control one or more devices. If he wants a single button to set his TV on, start his DVD player and dim his connected lights, he can easily add one with the built-in user-friendly macro editor.  \n\
 ![test](//thibaut.re/static/domorapp-full.jpg)\n\n\
 # Designed for extensibility\n\n\
@@ -193,7 +193,7 @@ Don't forget to fork the [source code](//github.com/thibautre/thibaut.re) !    \
         article: "# Art and scripts\n\n\
 Blender has always been my favourite software since I'm 14. It is at the edge of 2 different worlds : art and programming. Indeed, its main goal is to produce 3D images or movies, but you can also make your own Python scripts to automate some tasks (one major exemple could be creating a fractal shape).\n\n\
 Because of the bilateral nature of this software, I ended up grewing in *both* worlds : art __and__ programming.\n\n\
-In this video, Python scripts were used to produce automatic mechanical animations, like the floor at the very beginning, the walls during the scene transitions and the last building creation and destruction.\n\n\
+In this video, Python scripts were used to produce mechanical animations, like the floor creation at the very beginning, or the walls during the transitions between the scenes, or the last building creation and destruction.\n\n\
 <iframe src=\"https://www.youtube.com/embed/N-XmCWkpoH4\" class=\"video\" allowfullscreen></iframe>\n\n\
 # Featured in an exhibit show\n\n\
 There is no sound because this video was featured during an exhibit show, where sound was useless. That's also the reason why a high focus on subtitles has been made.\n\n\
