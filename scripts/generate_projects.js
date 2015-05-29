@@ -132,6 +132,7 @@ The application is built with modularity in mind, using RequireJS and KnockoutJS
             "LESS",
             "KnockoutJS",
             "RequireJS",
+            "REST API",
             "Grunt",
             "Mocha",
             "Webfont"
