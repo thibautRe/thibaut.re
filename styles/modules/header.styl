@@ -139,3 +139,18 @@
   left -100px
   top 60px
   fill #AEAEAE
+  stroke #868686
+  
+  path
+    stroke-dasharray 97
+    stroke-dashoffset 97
+    animation svg-dash 1s ease infinite
+  
+@keyframes svg-dash {
+  from {
+    stroke-dashoffset 97
+  }
+  to {
+    stroke-dashoffset -97
+  }
+}
