@@ -134,6 +134,11 @@
   background-color #D8D8D8
   color c-grey
   box-shadow 0 2px 20px black
+  transform translate(0, 20px) rotate(1deg)
+  transition .4s ease
+  
+  .is-visible &
+    transform translate(0,0) rotate(0)
   
 .header--index-quotes
   position absolute
