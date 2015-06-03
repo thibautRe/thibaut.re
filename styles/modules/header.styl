@@ -133,24 +133,47 @@
 .header--index
   background-color #D8D8D8
   color c-grey
+  box-shadow 0 2px 20px black
   
 .header--index-quotes
   position absolute
   left -100px
   top 60px
   fill #AEAEAE
-  stroke #868686
+  stroke @fill
   
   path
     stroke-dasharray 97
     stroke-dashoffset 97
-    animation svg-dash 1s ease infinite
+    fill-opacity 0
+    begin = 2s
+    gap = .5s
+    
+    &:nth-child(1)
+      animation svg-dash 1.3s begin ease forwards
+      
+    &:nth-child(2)
+      animation svg-dash 1.3s (begin + gap) ease forwards
+
+    &:nth-child(3)
+      animation svg-dash 1.3s (begin + 2 * gap) ease forwards
+    
+    &:nth-child(4)
+      animation svg-dash 1.3s (begin + 3 * gap) ease forwards
+
   
 @keyframes svg-dash {
   from {
     stroke-dashoffset 97
   }
+  40% {
+    fill-opacity 0
+  }
+  50% {
+    stroke-dashoffset 0
+  }
   to {
-    stroke-dashoffset -97
+    fill-opacity 1
+    stroke-dashoffset 0
   }
 }
